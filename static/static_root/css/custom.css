@@ -1,0 +1,20 @@
+.top { 
+background: url("../img/bg.png") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.blue{
+	background-color: rgb(28,117,188);
+}
+
+.gray{
+	background-color: rgb(230, 231, 232);
+
+}
+
+.green{
+	background-color: rgb(43,182,115);
+}

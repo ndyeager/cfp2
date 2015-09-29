@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block container %}
+{% load staticfiles %}
+<div class="container">
+	<div class="row">
+		<div classs="col-xs-12"><h1 class="text-primary">Frequently Asked Questions</h1></div>
+	</div>
+    <div class="row">
+      <div class="col-xs-4 blue"></div>
+      <div class="col-xs-4 gray"></div>
+      <div class="col-xs-4 green"></div>
+    </div>
+    <br>
+    <br>
+<div class="row">
+{% for question in faqList %}
+<div class="row">
+	<div class="col-xs-12"><h3 class="text-primary">{{question.question}}</h3></div>
+</div>
+<div class="row">
+	<div class="col-xs-12"><p class="text-muted">{{question.answer}}</p></div>
+</div>
+<br>
+{% endfor %}
+
+
+</div>
+
+</div>
+
+{% endblock %}
